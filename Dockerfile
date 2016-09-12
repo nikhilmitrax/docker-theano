@@ -24,4 +24,5 @@ RUN pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
 # Install usefuld tidbits
 RUN pip install jupyter
 RUN pip install ipython
+RUN apt-get install htop
 RUN pip install --user nose-parameterized
