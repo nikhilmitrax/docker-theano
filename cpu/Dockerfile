@@ -21,9 +21,8 @@ RUN apt-get update && apt-get install -y \
 # For SciPy
 RUN apt-get install -y libblas-dev liblapack-dev libatlas-base-dev gfortran
 
-# The versions come for fixing the bug at https://github.com/Theano/Theano/pull/3532
-RUN pip install numpy==1.9.3
-RUN pip install scipy==0.15.1
+RUN pip install numpy
+RUN pip install scipy
 
 # Install bleeding-edge Theano
 RUN pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
