@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
   python-scipy
 
 # For SciPy
-RUN apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran
+RUN apt-get install -y libblas-dev liblapack-dev libatlas-base-dev gfortran
 
 # The versions come for fixing the bug at https://github.com/Theano/Theano/pull/3532
 RUN pip install numpy==1.9.3
