@@ -2,7 +2,7 @@
 # Adds a couple of useful tools in to make it dev ready 
 
 # Start with cuDNN base image
-FROM nvidia/cuda:8.0-cudnn5-devel
+FROM nvidia/cuda:7.5-cudnn5-devel
 MAINTAINER Nikhil Mitra <nikhil.mitra@columbia.edu>
 
 # Install git, wget, python-dev, pip and other dependencies
@@ -32,5 +32,4 @@ RUN pip install ipython
 RUN apt-get install htop
 RUN pip install --user nose-parameterized
 
-COPY jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
 EXPOSE 8888

@@ -33,6 +33,4 @@ RUN pip install ipython
 RUN apt-get install htop
 RUN pip install --user nose-parameterized
 
-COPY jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
-
 EXPOSE 8888
