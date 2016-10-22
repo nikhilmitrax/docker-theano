@@ -2,7 +2,7 @@
 # Adds a couple of useful tools in to make it dev ready 
 
 # Start with cuDNN base image
-FROM nvidia/cuda:7.5-cudnn5-devel
+FROM nvidia/cuda:8.0-cudnn5-devel
 MAINTAINER Nikhil Mitra <nikhil.mitra@columbia.edu>
 
 # Install git, wget, python-dev, pip and other dependencies
